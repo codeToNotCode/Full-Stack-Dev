@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dating Website</title>
+</head>
+<body>
+<h2>Please Enter Your Details For Our Dating Website!</h2>
+<form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+<fieldset>
+	<legend>Your Face</legend>
+	<label for="profile_picture">Your Image:</label>
+	<input type="file" name="profile_picture" id="profile_picture" required="true"><br>
+	<label for="preview">Image preview:</label>
+	<img src="" id="preview">
+</fieldset><br>
+<fieldset>
+	<legend>Your general details</legend>
+	<label for="full_name">Name:</label>
+	<input type="text" name="full_name" id="full_name" placeholder="Your full name" required="true"><br>
+	<label for="gender_male">Gender:</label>
+	<input type="radio" name="gender" id="gender_male">Male
+	<input type="radio" name="gender" id="gender_female">Female<br>
+	<label for="age">Age:</label>
+	<input type="number" name="age" id="age" required="true" min="0" max="200" value="18"><br>
+	<label for="dob">Date of birth:</label>
+	<input type="data" name="dob" id="dob" value="dd/mm/yyyy"><br>
+	<label for="fav_color">Favourite Color:</label>
+	<input type="color" name="fav_color" id="fav_color"><br>
+	<label for="country">Which Country:</label>
+	<select>
+		<option value="no selection"></option>
+		<option value="south_africa">South Africa</option>
+		<option value="malaysia">Malaysia</option>
+		<option value="brazil">Brazil</option>
+		<option value="japan">Japan</option>
+		<option value="west_indies">West Indies</option>
+	</select>
+</fieldset><br>
+<fieldset>
+	<legend>Your Indicators</legend>
+	<label for="height">Height:</label>
+	Short<input type="range" name="height" id="height" min="0" max="100">Tall<br>
+	<label for="salary">Salary:</label>
+	Poor<input type="range" name="salary" id="salary" min="0" max="100">Rich
+</fieldset><br>
+<fieldset>
+	<legend>Your Contact Information</legend>
+	<label for="email">Email:</label>
+	<input type="email" name="email" id="email" required="true"><br>
+	<label for="mob_number">Mobile:</label>
+	<input type="tel" name="mob_number" id="mob_number"><br>
+	<label for="address">Address:</label>
+	<textarea id="address" name="address"></textarea><br>
+	<label for="contact_method1">Method to contact you:</label>
+	<input type="checkbox" name="contact_method1" id="contact_method1">Email
+	<input type="checkbox" name="contact_method2">Whatsapp
+	<input type="checkbox" name="contact_method3">In-app chat
+</fieldset><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+</body>
+</html>
